@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario comandos GIT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="Principal">
+        <h1>Glosario de comandos GIT</h1>
+        <h2>Autor: José Calvario Ramírez</h2>
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <title>Comandos de Git</title>
+        </head>
+        <body>
+          <table>
+            <tr>
+              <th class="titulos">Comando</th>
+              <th class="titulos">Descripción</th>
+              <th class="titulos">Parámetros</th>
+              <th class="titulos">Ejemplo</th>
+            </tr>
+            <tr>
+              <td class="titulos"><strong>git init</strong></td>
+              <td>Inicializa un nuevo repositorio Git en un directorio.</td>
+              <td>Ninguno.</td>
+              <td>git init</td>
+            </tr>
+            <tr>
+              <td class="titulos"><strong>git clone</strong></td>
+              <td>Clona un repositorio Git existente en un nuevo directorio.</td>
+              <td>URL del repositorio remoto.</td>
+              <td>git clone https://github.com/ejemplo/repo.git</td>
+            </tr>
+            <tr>
+              <td class="titulos"><strong>git add</strong></td>
+              <td>Agrega cambios al área de preparación (staging).</td>
+              <td>Nombre de archivos o directorios.</td>
+              <td>git add archivo.txt</td>
+            </tr>
+            <tr>
+              <td class="titulos"><strong>git commit</strong></td>
+              <td>Registra los cambios en el repositorio.</td>
+              <td>-m (mensaje del commit).</td>
+              <td>git commit -m "Añadir función de inicio de sesión"</td>
+            </tr>
+            <tr>
+              <td class="titulos"><strong>git branch</strong></td>
+              <td>Lista las ramas en el repositorio.</td>
+              <td>-a (muestra todas las ramas).</td>
+              <td>git branch -a</td>
+            </tr>
+            <tr>
+              <td class="titulos"><strong>git checkout</strong></td>
+              <td>Cambia de rama o restaura archivos.</td>
+              <td>Nombre de la rama o archivo.</td>
+              <td>git checkout nueva-funcionalidad</td>
+            </tr>
+            <tr>
+              <td class="titulos"><strong>git merge</strong></td>
+              <td>Fusiona una rama con la rama actual.</td>
+              <td>Nombre de la rama a fusionar.</td>
+              <td>git merge feature-branch</td>
+            </tr>
+            <tr>
+              <td class="titulos"><strong>git status</strong></td>
+              <td>Muestra el estado actual del repositorio.</td>
+              <td>Ninguno.</td>
+              <td>git status</td>
+            </tr>
+            <tr>
+              <td class="titulos"><strong>git log</strong></td>
+              <td>Muestra el historial de commits.</td>
+              <td>Varios para personalizar la salida.</td>
+              <td>git log --oneline</td>
+            </tr>
+            <tr>
+              <td class="titulos"><strong>git remote</strong></td>
+              <td>Muestra los repositorios remotos configurados.</td>
+              <td>Ninguno.</td>
+              <td>git remote -v</td>
+            </tr>
+            <tr>
+              <td class="titulos"><strong>git fetch</strong></td>
+              <td>Descarga objetos y referencias de otro repositorio.</td>
+              <td>Ninguno.</td>
+              <td>git fetch origin</td>
+              </tr>
+              <tr>
+                <td class="titulos"><strong>git remote add</strong></td>
+                <td>Agrega un nuevo repositorio remoto.</td>
+                <td>Nombre del repositorio remoto y URL.</td>
+                <td>git remote add upstream https://github.com/upstream/repo.git</td>
+              </tr>
+              <tr>
+                <td class="titulos"><strong>git diff</strong></td>
+                <td>Muestra las diferencias entre el área de preparación y el directorio de trabajo.</td>
+                <td>Ninguno o nombre de archivo.</td>
+                <td>git diff</td>
+              </tr>
+              <tr>
+                <td class="titulos"><strong>git reset</strong></td>
+                <td>Reinicia el HEAD a un commit específico, deshaciendo commits anteriores.</td>
+                <td>Nombre del commit o --hard, --soft, --mixed.</td>
+                <td>git reset HEAD~1</td>
+              </tr>
+              <tr>
+                <td class="titulos"><strong>git remote remove</strong></td>
+                <td>Elimina un repositorio remoto.</td>
+                <td>Nombre del repositorio remoto.</td>
+                <td>git remote remove upstream</td>
+              </tr>
+              <tr>
+                <td class="titulos"><strong>git stash</strong></td>
+                <td>Guarda temporalmente los cambios no comprometidos en una pila de cambios.</td>
+                <td>Ninguno.</td>
+                <td>git stash</td>
+              </tr>
+              <tr>
+                <td class="titulos"><strong>git tag</strong></td>
+                <td>Etiqueta commits para marcar versiones específicas.</td>
+                <td>Nombre de la etiqueta y commit.</td>
+                <td>git tag v1.0</td>
+              </tr>
+              <tr>
+                <td class="titulos"><strong>git rebase</strong></td>
+                <td>Reorganiza commits aplicándolos sobre otra rama.</td>
+                <td>Nombre de la rama objetivo.</td>
+                <td>git rebase main</td>
+              </tr>
+              <tr>
+                <td class="titulos"><strong>git cherry-pick</strong></td>
+                <td>Aplica un commit específico de una rama a otra.</td>
+                <td>SHA del commit.</td>
+                <td>git cherry-pick abc123</td>
+              </tr>
+              <tr>
+                <td class="titulos"><strong>git log --graph</strong></td>
+                <td>Muestra el historial de commits en un formato gráfico.</td>
+                <td>Ninguno.</td>
+                <td>git log --graph</td>
+              </tr>
+              <tr>
+                <td class="titulos"><strong>git blame</strong></td>
+                <td>Muestra quién modificó cada línea de un archivo.</td>
+                <td>Nombre del archivo.</td>
+                <td>git blame archivo.txt</td>
+              </tr>
+              <tr>
+                <td class="titulos"><strong>git clean</strong></td>
+                <td>Elimina archivos no rastreados en el directorio de trabajo.</td>
+                <td>Parámetros como -n (simulación) y -f (forzar).</td>
+                <td>git clean -n</td>
+              </tr>
+              <tr>
+                <td class="titulos"><strong>git config</strong></td>
+                <td>Configura opciones de Git a nivel global o local.</td>
+                <td>Parámetros como --global o --local.</td>
+                <td>git config --global user.name "Tu Nombre"</td>
+              </tr>
+              <tr>
+                <td class="titulos"><strong>git remote show</strong></td>
+                <td>Muestra información detallada sobre un repositorio remoto.</td>
+                <td>Nombre del repositorio remoto.</td>
+                <td>git remote show origin</td>
+              </tr>
+              <tr>
+                <td class="titulos"><strong>git revert</strong></td>
+                <td>Crea un nuevo commit que revierte los cambios de un commit anterior.</td>
+                <td>SHA del commit.</td>
+                <td>git revert abc123</td>
+              </tr>
+              <tr>
+                <td class="titulos"><strong>git bisect</strong></td>
+                <td>Ayuda a encontrar un commit que introdujo un problema, realizando una búsqueda binaria.</td>
+                <td>Parámetros como start y good/bad.</td>
+                <td>git bisect start</td>
+              </tr>
+              
+          </table>
+        </body>
+        </html>
+        
+        <h3>Conclusion personal:</h3>
+        <p>Git es un potente controlador de versiones que como ya vimos en la tabla, cuenta con una gran cantidad
+            de comandos que nos sirven para hacer/controlar todas nuestras necesidades en nuestros archivos, esto
+            con el fin de que nos ayude a llevar un mejor control de lo que estamos haciendo.
+        </p>
+        
+            
+    </div>
+    
+</body>
+</html>
